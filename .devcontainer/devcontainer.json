@@ -1,6 +1,6 @@
 {
   "name": "Connections Game",
-  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
   "forwardPorts": [8080],
   "portsAttributes": {
     "8080": {
@@ -8,7 +8,7 @@
       "onAutoForward": "openBrowser"
     }
   },
-  "postStartCommand": "python3 -m http.server 8080",
+  "postStartCommand": "npx --yes serve . -p 8080",
   "customizations": {
     "vscode": {
       "extensions": ["ritwickdey.LiveServer"]
