@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Connections</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>Connections</h1>
+      <p class="subtitle">Group words that share a common thread.</p>
+    </header>
+
+    <div id="game-container">
+      <!-- Solved categories appear here -->
+      <div id="solved-categories"></div>
+
+      <!-- Word grid -->
+      <div id="word-grid"></div>
+
+      <!-- Mistakes -->
+      <div id="mistakes-area">
+        <span>Mistakes remaining:</span>
+        <div id="mistake-dots"></div>
+      </div>
+
+      <!-- Controls -->
+      <div id="controls">
+        <button id="btn-shuffle">Shuffle</button>
+        <button id="btn-deselect" disabled>Deselect All</button>
+        <button id="btn-submit" disabled>Submit</button>
+      </div>
+    </div>
+
+    <!-- Puzzle picker -->
+    <div id="puzzle-picker">
+      <span>Puzzle:</span>
+      <div id="puzzle-buttons"></div>
+    </div>
+
+    <!-- Result modal -->
+    <div id="modal-overlay" class="hidden">
+      <div id="modal">
+        <h2 id="modal-title"></h2>
+        <div id="modal-results"></div>
+        <button id="modal-close">Play Again</button>
+      </div>
+    </div>
+
+    <!-- Toast notification -->
+    <div id="toast" class="hidden"></div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
