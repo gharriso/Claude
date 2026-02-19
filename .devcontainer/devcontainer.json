@@ -8,7 +8,8 @@
       "onAutoForward": "openBrowser"
     }
   },
-  "postStartCommand": "npx --yes serve . -p 8080",
+  "postCreateCommand": "npm install -g serve",
+  "postStartCommand": "serve /workspaces/Claude -p 8080",
   "customizations": {
     "vscode": {
       "extensions": ["ritwickdey.LiveServer"]
